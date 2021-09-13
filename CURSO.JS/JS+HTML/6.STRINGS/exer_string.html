@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio String</title>
+</head>
+<body>
+    <script> // da pra fazer tanto gerando outra variavel quanto fazendo direto
+        const nome = prompt("digite seu nome completo")
+        document.body.innerHTML += `seu nome é ${nome} <br />`
+        
+        document.body.innerHTML += `seu nome tem ${nome.length} letras  <br />`
+        const segundaLetra = nome.charAt(1) //ou nome.[1]
+        document.body.innerHTML += `a segunda letra do seu nome é ${segundaLetra} <br />`
+         
+        document.body.innerHTML += `qual o primeiro indice da letra D do seu nome ${nome.indexOf("d")}<br />`
+        const ultimoIndice = nome.lastIndexOf("d")
+        document.body.innerHTML += `qual o ULTIMO indice da letra D do seu nome ${ultimoIndice} <br />`
+        
+        document.body.innerHTML += `as ultimas 3 letras do seu nome sao ${nome.slice(-3)}<br />`
+         
+        document.body.innerHTML += `as palavras do seu nome sao  <strong> ${nome.split(" ")} </strong><br />`
+        
+        document.body.innerHTML += `seu nome com letras maiusculas <strong> ${nome.toUpperCase()} </strong><br />`
+        
+        document.body.innerHTML += `seu nome com letras minusculas <strong>  ${nome.toLowerCase()} </strong><br />`
+
+    </script>
+</body>
+</html>

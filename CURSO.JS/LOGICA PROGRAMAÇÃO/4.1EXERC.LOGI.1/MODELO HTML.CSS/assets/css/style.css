@@ -1,0 +1,72 @@
+/*@import url('https://fonts.googleapis.com/css2? family = Abrir + Sans + Condensado: wght @ 300; 700 & display = swap');*/
+
+:root{/**criando uma variavel global em css**/
+    --primary-color : rgb(12, 58, 102);/** declarando variavel em css**/
+    --primary-color-2: rgb(93, 241, 241);
+    --primaty-color-3: rgb(231, 67, 67);
+}
+
+*{
+box-sizing: border-box; /** o tamanho passa a ser medido a partir das bordas 100 por 100 **/
+outline: none;
+}
+
+body{
+margin: 0;
+padding: 0;
+background: var(--primary-color);
+font-family: 'Open Sans', sans-serif;
+font-size: 1.3em;
+line-height: 1.5em;
+}
+.container{
+    max-width: 640px;
+    margin: 50px auto; /**coloca o conteudo no meio da pagina**/
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+form input, form label, form button {
+
+display: block;
+width: 100%;
+margin-bottom: 10px;
+
+}
+form input{
+    font-size:24px;
+    height: 50px;;
+    padding:0 20px;
+}
+form input:focus{/** estado**/
+
+    outline: 1px solid black
+}
+form button{
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px; 
+    font-weight: 700;
+    height:50px;
+    cursor: pointer;
+    margin-top :30px;
+}
+form button:hover{
+background: rgb(0, 255, 170);
+
+}
+form button:active{
+    background: yellowgreen
+    
+}
+.paragrafo-resultado, .bad{
+
+    background: gray;
+    padding: 10px 20px;
+}
+.bad{
+
+    background: rgb(112, 72, 72);
+
+}
